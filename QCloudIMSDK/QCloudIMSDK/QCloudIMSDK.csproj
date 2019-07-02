@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7E2081F-C401-447F-BC54-D872D7391C2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QCloudIMSDK</RootNamespace>
+    <AssemblyName>QCloudIMSDK</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.2.1.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.2.1\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="models\callback\GroupCallbackSendMsgRequest.cs" />
+    <Compile Include="models\config\GetAppInfoRequest.cs" />
+    <Compile Include="models\config\GetAppInfoResult.cs" />
+    <Compile Include="models\config\GetNoSpeakingRequest.cs" />
+    <Compile Include="models\config\GetNoSpeakingResult.cs" />
+    <Compile Include="models\config\SetNoSpeakingRequest.cs" />
+    <Compile Include="models\config\SetNoSpeakingResult.cs" />
+    <Compile Include="models\dirtywords\AddDirtyWordRequest.cs" />
+    <Compile Include="models\dirtywords\AddDirtyWordResult.cs" />
+    <Compile Include="models\dirtywords\DeleteDirtyWordRequest.cs" />
+    <Compile Include="models\dirtywords\DeleteDirtyWordResult.cs" />
+    <Compile Include="models\dirtywords\GetDirtyWordRequest.cs" />
+    <Compile Include="models\dirtywords\GetDirtyWordResult.cs" />
+    <Compile Include="models\friend\AddFriendItem.cs" />
+    <Compile Include="models\friend\InfoItem.cs" />
+    <Compile Include="models\friend\ResultItem.cs" />
+    <Compile Include="models\groups\AddGroupMemberRequest.cs" />
+    <Compile Include="models\groups\AddGroupMemberResult.cs" />
+    <Compile Include="models\groups\ChangeGroupOwnerRequest.cs" />
+    <Compile Include="models\groups\ChangeGroupOwnerResult.cs" />
+    <Compile Include="models\groups\CreateGroupRequest.cs" />
+    <Compile Include="models\groups\CreateGroupResult.cs" />
+    <Compile Include="models\groups\DeleteGroupMemberRequest.cs" />
+    <Compile Include="models\groups\DeleteGroupMemberResult.cs" />
+    <Compile Include="models\groups\DeleteGroupMsgBySenderRequest.cs" />
+    <Compile Include="models\groups\DeleteGroupMsgBySenderResult.cs" />
+    <Compile Include="models\groups\DestroyGroupRequest.cs" />
+    <Compile Include="models\groups\DestroyGroupResult.cs" />
+    <Compile Include="models\groups\ForbidSendMsgRequest.cs" />
+    <Compile Include="models\groups\ForbidSendMsgResult.cs" />
+    <Compile Include="models\groups\GetGroupInfoRequest.cs" />
+    <Compile Include="models\groups\GetGroupInfoResult.cs" />
+    <Compile Include="models\groups\GetGroupListRequest.cs" />
+    <Compile Include="models\groups\GetGroupListResult.cs" />
+    <Compile Include="models\groups\GetGroupMemberInfoRequest.cs" />
+    <Compile Include="models\groups\GetGroupMemberInfoResult.cs" />
+    <Compile Include="models\groups\GetGroupShuttedUinRequest.cs" />
+    <Compile Include="models\groups\GetGroupShuttedUinResult.cs" />
+    <Compile Include="models\groups\GetJoinedGroupListRequest.cs" />
+    <Compile Include="models\groups\GetJoinedGroupListResult.cs" />
+    <Compile Include="models\groups\GetRoleInGroupRequest.cs" />
+    <Compile Include="models\groups\GetRoleInGroupResult.cs" />
+    <Compile Include="models\groups\GroupMsgGetSimpleRequest.cs" />
+    <Compile Include="models\groups\GroupMsgGetSimpleResult.cs" />
+    <Compile Include="models\groups\ImportGroupMemberRequest.cs" />
+    <Compile Include="models\groups\ImportGroupMemberResult.cs" />
+    <Compile Include="models\groups\ImportGroupMsgRequest.cs" />
+    <Compile Include="models\groups\ImportGroupMsgResult.cs" />
+    <Compile Include="models\groups\ImportGroupRequest.cs" />
+    <Compile Include="models\groups\ImportGroupResult.cs" />
+    <Compile Include="models\groups\ModifyGroupBaseInfoRequest.cs" />
+    <Compile Include="models\groups\ModifyGroupBaseInfoResult.cs" />
+    <Compile Include="models\groups\ModifyGroupMemberInfoRequest.cs" />
+    <Compile Include="models\groups\ModifyGroupMemberInfoResult.cs" />
+    <Compile Include="models\groups\SearchGroupRequest.cs" />
+    <Compile Include="models\groups\SearchGroupResult.cs" />
+    <Compile Include="models\groups\SendGroupMsgRequest.cs" />
+    <Compile Include="models\groups\SendGroupMsgResult.cs" />
+    <Compile Include="models\groups\SendGroupSystemNotificationRequest.cs" />
+    <Compile Include="models\groups\SendGroupSystemNotificationResult.cs" />
+    <Compile Include="models\groups\SetUnreadMsgNumRequest.cs" />
+    <Compile Include="models\groups\SetUnreadMsgNumResult.cs" />
+    <Compile Include="models\member\AppDefinedData.cs" />
+    <Compile Include="models\member\GroupId.cs" />
+    <Compile Include="models\member\MemberListItem.cs" />
+    <Compile Include="models\member\MemberListResultItem.cs" />
+    <Compile Include="models\message\contents\CustomMsgContent.cs" />
+    <Compile Include="models\message\contents\FaceMsgContent.cs" />
+    <Compile Include="models\message\contents\FileMsgContent.cs" />
+    <Compile Include="models\message\contents\ImageMsgContent.cs" />
+    <Compile Include="models\message\contents\LocationMsgContent.cs" />
+    <Compile Include="models\message\contents\MsgContent.cs" />
+    <Compile Include="models\message\contents\SoundMsgContent.cs" />
+    <Compile Include="models\message\contents\TextMsgContent.cs" />
+    <Compile Include="models\message\ErrorListItem.cs" />
+    <Compile Include="models\message\MsgBodyItem.cs" />
+    <Compile Include="models\message\OfflinePushInfo.cs" />
+    <Compile Include="models\ologin\AccountImportRequest.cs" />
+    <Compile Include="models\ologin\AccountImportResult.cs" />
+    <Compile Include="models\ologin\KickRequest.cs" />
+    <Compile Include="models\ologin\KickResult.cs" />
+    <Compile Include="models\ologin\MultiAccountImportRequest.cs" />
+    <Compile Include="models\ologin\MultiAccountImportResult.cs" />
+    <Compile Include="models\ologin\RegisterAccountRequest.cs" />
+    <Compile Include="models\ologin\RegisterAccountResult.cs" />
+    <Compile Include="models\openim\BatchSendMsgRequest.cs" />
+    <Compile Include="models\openim\BatchSendMsgResult.cs" />
+    <Compile Include="models\openim\ImportMsgRequest.cs" />
+    <Compile Include="models\openim\ImportMsgResult.cs" />
+    <Compile Include="models\openim\QueryStateRequest.cs" />
+    <Compile Include="models\openim\QueryStateResult.cs" />
+    <Compile Include="models\openim\SendMsgRequest.cs" />
+    <Compile Include="models\openim\SendMsgResult.cs" />
+    <Compile Include="models\portrait\ProfileItem.cs" />
+    <Compile Include="models\profile\PortraitGetRequest.cs" />
+    <Compile Include="models\profile\PortraitGetResult.cs" />
+    <Compile Include="models\profile\PortraitSetRequest.cs" />
+    <Compile Include="models\profile\PortraitSetResult.cs" />
+    <Compile Include="models\QCloudIMRequest.cs" />
+    <Compile Include="models\QCloudIMResult.cs" />
+    <Compile Include="models\sns\BlackListAddRequest.cs" />
+    <Compile Include="models\sns\BlackListAddResult.cs" />
+    <Compile Include="models\sns\BlackListCheckRequest.cs" />
+    <Compile Include="models\sns\BlackListCheckResult.cs" />
+    <Compile Include="models\sns\BlackListDeleteRequest.cs" />
+    <Compile Include="models\sns\BlackListDeleteResult.cs" />
+    <Compile Include="models\sns\BlackListGetRequest.cs" />
+    <Compile Include="models\sns\BlackListGetResult.cs" />
+    <Compile Include="models\sns\FriendAddRequest.cs" />
+    <Compile Include="models\sns\FriendAddResult.cs" />
+    <Compile Include="models\sns\FriendCheckRequest.cs" />
+    <Compile Include="models\sns\FriendCheckResult.cs" />
+    <Compile Include="models\sns\FriendDeleteAllRequest.cs" />
+    <Compile Include="models\sns\FriendDeleteAllResult.cs" />
+    <Compile Include="models\sns\FriendDeleteRequest.cs" />
+    <Compile Include="models\sns\FriendDeleteResult.cs" />
+    <Compile Include="models\sns\FriendGetAllRequest.cs" />
+    <Compile Include="models\sns\FriendGetAllResult.cs" />
+    <Compile Include="models\sns\FriendGetListRequest.cs" />
+    <Compile Include="models\sns\FriendGetListResult.cs" />
+    <Compile Include="models\sns\FriendImportRequest.cs" />
+    <Compile Include="models\sns\FriendImportResult.cs" />
+    <Compile Include="models\sns\GroupAddRequest.cs" />
+    <Compile Include="models\sns\GroupAddResult.cs" />
+    <Compile Include="models\sns\GroupDeleteRequest.cs" />
+    <Compile Include="models\sns\GroupDeleteResult.cs" />
+    <Compile Include="models\svc\GetHistoryRequest.cs" />
+    <Compile Include="models\svc\GetHistoryResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QCloudIMv4.cs" />
+    <Compile Include="utils\IRestSharp.cs" />
+    <Compile Include="utils\RestSharpClient.cs" />
+    <Compile Include="utils\TlsSignature.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sigcheck.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="QCloud\keys\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

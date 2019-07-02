@@ -1,0 +1,13 @@
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\bin\Debug\QCloudIMSDK.dll.config
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\bin\Debug\QCloudIMSDK.dll
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\bin\Debug\QCloudIMSDK.pdb
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\bin\Debug\RestSharp.dll
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\bin\Debug\System.ValueTuple.dll
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\bin\Debug\Newtonsoft.Json.xml
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\bin\Debug\System.ValueTuple.xml
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\obj\Debug\QCloudIMSDK.csprojAssemblyReference.cache
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\obj\Debug\QCloudIMSDK.csproj.CoreCompileInputs.cache
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\obj\Debug\QCloudIMSDK.csproj.CopyComplete
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\obj\Debug\QCloudIMSDK.dll
+D:\GitHub\QCloudIMSDK\QCloudIMSDK\QCloudIMSDK\obj\Debug\QCloudIMSDK.pdb
